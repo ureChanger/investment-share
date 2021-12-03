@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/drawable/drawable_btn_tag.xml" value="0.1" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/drawable/drawable_main_btn_tag.xml" value="0.1" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/drawable/drawable_main_publication.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/drawable/drawable_main_tv_post.xml" value="0.38229166666666664" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/activity_detail_editor.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/activity_detail_post.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/activity_detail_publication.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/activity_main.xml" value="0.2754491017964072" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/follow_item_list.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/main_follow_item_list.xml" value="0.5" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/main_post_item_list.xml" value="0.67" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/main_tag_item_list.xml" value="0.5" />
+        <entry key="..\:/Users/gilhyun/KookMin_Univ/Software/2nd_grade/2nd_semester/Kola_Beta/app/src/main/res/layout/tag_item_list.xml" value="0.3935483870967742" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

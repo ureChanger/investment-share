@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kola_Beta">
         <activity
-            android:name=".MainActivity"
+            android:name=".detail.DetailPublicActivity"
+            android:exported="true" />
+        <activity
+            android:name=".detail.DetailPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".detail.DetailEditorActivity"
+            android:exported="true" />
+        <activity
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
