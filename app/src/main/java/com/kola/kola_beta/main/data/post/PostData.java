@@ -21,10 +21,12 @@ public class PostData {
     private String copied_coin;
     private String copied_decision;
     private ArrayList<Integer> numcopied;
+    private ArrayList<String> tag;
 
     public PostData(int id_editor, int id_post, int id_public, int thumbnail, String title,
                     String subtitle, ArrayList<Integer> numliked, Boolean isPrivated,
-                    String copied_coin, String copied_decision, ArrayList<Integer> numcopied) {
+                    String copied_coin, String copied_decision, ArrayList<Integer> numcopied,
+                    ArrayList<String> tag) {
         this.id_editor = id_editor;
         this.id_post = id_post;
         this.id_public = id_public;
@@ -36,6 +38,7 @@ public class PostData {
         this.copied_coin = copied_coin;
         this.copied_decision = copied_decision;
         this.numcopied = numcopied;
+        this.tag = tag;
     }
 
     public int getId_editor() {
@@ -148,5 +151,13 @@ public class PostData {
 
     public void setNumcopied(ArrayList<Integer> numcopied) {
         this.numcopied = numcopied;
+    }
+
+    public ArrayList<String> getTag() {
+        return tag;
+    }
+
+    public void setTag(ArrayList<String> tag) {
+        this.tag = tag;
     }
 }

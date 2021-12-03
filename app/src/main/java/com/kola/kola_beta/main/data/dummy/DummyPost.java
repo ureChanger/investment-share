@@ -12,7 +12,7 @@ public class DummyPost {
         this.dummyPost = new ArrayList<>(
                 Arrays.asList(
                         new PostData(
-                                0,
+                                1,
                                 0,
                                 0,
                                 R.drawable.ic_launcher_background,
@@ -22,10 +22,11 @@ public class DummyPost {
                                 false,
                                 "비트코인",
                                 "매수",
-                                new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7))
+                                new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<String >(Arrays.asList("스택스"))
                         ),
                         new PostData(
-                                0,
+                                1,
                                 1,
                                 0,
                                 R.drawable.ic_launcher_background,
@@ -35,7 +36,8 @@ public class DummyPost {
                                 false,
                                 "스택스",
                                 "매수",
-                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7))
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<String >(Arrays.asList("ALEX"))
                         ),
                         new PostData(
                                 1,
@@ -48,7 +50,8 @@ public class DummyPost {
                                 true,
                                 "솔라나",
                                 "매도",
-                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7))
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<String >(Arrays.asList("스택스"))
                         ),
                         new PostData(
                                 3,
@@ -61,7 +64,8 @@ public class DummyPost {
                                 false,
                                 "none",
                                 "none",
-                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7))
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<String >(Arrays.asList("비트코인"))
                         )
                 )
         );
