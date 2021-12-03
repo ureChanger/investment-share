@@ -16,7 +16,7 @@ public class DummyPost {
                                 0,
                                 0,
                                 R.drawable.ic_launcher_background,
-                                "솔라나를 최초의 웹-스케일 블록체인으로 만들어준 8 가지 혁신",
+                                "1",
                                 "솔라나의 50,000 TPS 블록체인 네트워크를 가능하게 해준 혁신적인 기술들에 대해 알아봅시다",
                                 new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7)),
                                 false,
@@ -26,11 +26,11 @@ public class DummyPost {
                                 new ArrayList<String >(Arrays.asList("스택스"))
                         ),
                         new PostData(
-                                1,
+                                2,
                                 1,
                                 0,
                                 R.drawable.ic_launcher_background,
-                                "솔라나를 최초의 웹-스케일 블록체인으로 만들어준 8 가지 혁신",
+                                "2",
                                 "솔라나의 50,000 TPS 블록체인 네트워크를 가능하게 해준 혁신적인 기술들에 대해 알아봅시다",
                                 new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
                                 false,
@@ -40,11 +40,11 @@ public class DummyPost {
                                 new ArrayList<String >(Arrays.asList("ALEX"))
                         ),
                         new PostData(
-                                1,
+                                0,
                                 2,
                                 0,
                                 R.drawable.ic_launcher_background,
-                                "솔라나를 최초의 웹-스케일 블록체인으로 만들어준 8 가지 혁신",
+                                "3",
                                 "솔라나의 50,000 TPS 블록체인 네트워크를 가능하게 해준 혁신적인 기술들에 대해 알아봅시다",
                                 new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7)),
                                 true,
@@ -54,18 +54,32 @@ public class DummyPost {
                                 new ArrayList<String >(Arrays.asList("스택스"))
                         ),
                         new PostData(
-                                3,
+                                1,
                                 3,
                                 0,
                                 R.drawable.ic_launcher_background,
-                                "솔라나를 최초의 웹-스케일 블록체인으로 만들어준 8 가지 혁신",
+                                "4",
                                 "솔라나의 50,000 TPS 블록체인 네트워크를 가능하게 해준 혁신적인 기술들에 대해 알아봅시다",
-                                new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
                                 false,
                                 "none",
-                                "none",
+                                "매도",
                                 new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
-                                new ArrayList<String >(Arrays.asList("비트코인"))
+                                new ArrayList<String >(Arrays.asList("ALEX"))
+                        ),
+                        new PostData(
+                                1,
+                                4,
+                                0,
+                                R.drawable.ic_launcher_background,
+                                "5",
+                                "솔라나의 50,000 TPS 블록체인 네트워크를 가능하게 해준 혁신적인 기술들에 대해 알아봅시다",
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+                                false,
+                                "이더리움",
+                                "매도",
+                                new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5, 6, 7)),
+                                new ArrayList<String >(Arrays.asList("ALEX"))
                         )
                 )
         );

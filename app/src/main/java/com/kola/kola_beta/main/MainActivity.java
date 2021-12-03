@@ -64,11 +64,17 @@ public class MainActivity extends AppCompatActivity {
 
         // 태그 필터 기준 데이터 초기화
         arr_post_filter_tag = new ArrayList<>();
-        for(int i=0; i<arr_tag.size(); i++){
+        for (int i=0; i<arr_tag.size(); i++){
             arr_post_filter_tag.add(new ArrayList<>());
-            for(int j=0; j<arr_post.size(); j++){
-                if (arr_post.get(j).getTag().indexOf(arr_tag.get(i))!=-1){
-                    arr_post_filter_tag.get(i).add(arr_post.get(j));
+        }
+
+        for (int i=0; i<arr_post.size(); i++){
+            ArrayList<String> tag = arr_post.get(i).getTag();
+            for(int j=0; j<tag.size(); j++){
+                int idx = arr_tag.indexOf(tag.get(j));
+                if(idx!=-1){
+                    arr_post_filter_tag.get(idx).add(arr_post.get(i));
+                    break;
                 }
             }
         }
@@ -171,6 +177,5 @@ public class MainActivity extends AppCompatActivity {
         // 리사이클러뷰 - 포스트
         adapter_post = new PostAdapter(arr_current_post);
         rv_post.setAdapter(adapter_post);
-
     }
 }

@@ -1,6 +1,7 @@
 package com.kola.kola_beta.main.data.post;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,11 +53,38 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.CustomViewHold
         holder.iv_thumbnail.setImageResource(arrayList.get(position).getThumbnail());
         holder.tv_title.setText(arrayList.get(position).getTitle());
         holder.tv_subtitle.setText(arrayList.get(position).getSubtitle());
+
+        // "추천"에 따른 변화
         if (arrayList.get(position).getNumliked().indexOf(my_id)!=-1){
             holder.tv_numliked.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_blue));
             holder.iv_liked.setImageResource(R.drawable.ic_baseline_favorite_24);
+        }else {
+            holder.tv_numliked.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_black));
+            holder.iv_liked.setImageResource(R.drawable.ic_baseline_favorite_border_24);
         }
         holder.tv_numliked.setText(""+arrayList.get(position).getNumliked().size());
+
+        // "투자 결정"에 따른 변화
+        if(arrayList.get(position).getCopied_coin().equals("none")){
+            holder.tv_copied.setText("투자 결정 없음");
+        }else {
+            holder.tv_copied.setText(arrayList.get(position).getCopied_coin()+" "+
+                    arrayList.get(position).getCopied_decision()+" 결정");
+        }
+        holder.tv_numcopied.setText(arrayList.get(position).getNumcopied().size()+ "명이 따라했어요");
+
+        // "따라하기 수"에 따른 변화
+        if (arrayList.get(position).getNumcopied().indexOf(my_id)!=-1){
+            holder.tv_copied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_blue));
+            holder.tv_numcopied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_blue));
+            holder.iv_copied.setImageResource(R.drawable.ic_baseline_check_circle_24);
+        }else {
+            holder.tv_copied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+            holder.tv_numcopied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.black));
+            holder.iv_copied.setImageResource(R.drawable.ic_baseline_check_circle_outline_24);
+        }
+
+        // "공개"에 따른 변화
         if (arrayList.get(position).getIsPrivated()==true){
             holder.iv_copied.setImageResource(R.drawable.ic_baseline_people_alt_24);
             holder.tv_copied.setText("친구에게만 투자 결정 공개");
@@ -67,19 +95,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.CustomViewHold
                 }
             });
         }else {
-            if (arrayList.get(position).getNumcopied().indexOf(my_id)!=-1){
-                holder.tv_copied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_blue));
-                holder.tv_numcopied.setTextColor(ContextCompat.getColor(holder.itemView.getContext(), R.color.kola_blue));
-                holder.iv_copied.setImageResource(R.drawable.ic_baseline_check_circle_24);
-            }
-            if(arrayList.get(position).getCopied_coin().equals("none")){
-                holder.tv_copied.setText("투자 결정 없음");
-            }else {
-                holder.tv_copied.setText(arrayList.get(position).getCopied_coin()+" "+
-                        arrayList.get(position).getCopied_decision()+" 결정");
-            }
-            holder.tv_numcopied.setText(+arrayList.get(position).getNumcopied().size()+ "명이 따라했어요");
-
+            holder.tv_numcopied.setVisibility(View.VISIBLE);
         }
     }
 
