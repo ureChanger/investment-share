@@ -16,6 +16,7 @@ public class PostData {
     private int thumbnail;
     private String title;
     private String subtitle;
+    private String url;
     private ArrayList<Integer> numliked;
     private Boolean isPrivated;
     private String copied_coin;
@@ -24,7 +25,7 @@ public class PostData {
     private ArrayList<String> tag;
 
     public PostData(int id_editor, int id_post, int id_public, int thumbnail, String title,
-                    String subtitle, ArrayList<Integer> numliked, Boolean isPrivated,
+                    String subtitle, String url, ArrayList<Integer> numliked, Boolean isPrivated,
                     String copied_coin, String copied_decision, ArrayList<Integer> numcopied,
                     ArrayList<String> tag) {
         this.id_editor = id_editor;
@@ -33,6 +34,7 @@ public class PostData {
         this.thumbnail = thumbnail;
         this.title = title;
         this.subtitle = subtitle;
+        this.url = url;
         this.numliked = numliked;
         this.isPrivated = isPrivated;
         this.copied_coin = copied_coin;
@@ -111,6 +113,14 @@ public class PostData {
 
     public void setSubtitle(String subtitle) {
         this.subtitle = subtitle;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public ArrayList<Integer> getNumliked() {

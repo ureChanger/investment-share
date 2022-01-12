@@ -13,8 +13,8 @@ public class DummyUser {
                 Arrays.asList(
                         new UserData(
                                 0,
-                                "GM_Chung",
-                                R.drawable.drawable_main_img_chung,
+                                "GM Chung",
+                                R.drawable.ic_launcher_foreground,
                                 // 소속된 Publication id
                                 new ArrayList<>(
                                         Arrays.asList(
@@ -35,7 +35,7 @@ public class DummyUser {
                                 ),
                                 new ArrayList<>(
                                         Arrays.asList(
-                                                "스택스", "ALEX", "비트코인"
+                                                "스택스", "솔라나", "비트코인"
                                         )
                                 ),
                                 "Medium member since June 2021·Editor of DeSpread Creative, " +
@@ -50,8 +50,8 @@ public class DummyUser {
                         ),
                         new UserData(
                                 1,
-                                "GM_Chung",
-                                R.drawable.drawable_main_img_chung,
+                                "GM Chung",
+                                R.drawable.drawable_user_0,
                                 // 소속된 Publication id
                                 new ArrayList<>(
                                         Arrays.asList(
@@ -88,7 +88,7 @@ public class DummyUser {
                         new UserData(
                                 2,
                                 "GM_Chung",
-                                R.drawable.drawable_main_img_chung,
+                                R.drawable.ic_launcher_foreground,
                                 // 소속된 Publication id
                                 new ArrayList<>(
                                         Arrays.asList(
@@ -125,7 +125,7 @@ public class DummyUser {
                         new UserData(
                                 3,
                                 "GM_Chung",
-                                R.drawable.drawable_main_img_chung,
+                                R.drawable.ic_launcher_foreground,
                                 // 소속된 Publication id
                                 new ArrayList<>(
                                         Arrays.asList(
